@@ -1,3 +1,20 @@
 # hsp65 Tb11-Tb12 marker gene database - updated 2024
 > Total sequences (as of 24 January 2025): 189
+
 > Read Length: 401bps
+
+
+## Database update protocol
+
+Step 1: Cleaning and preparing the training dataset (Dai et al, 2011)
+
+Reference: https://journals.asm.org/doi/full/10.1128/jcm.02602-10
+
+Align Dai et al reference sequences using MAFFT (https://mafft.cbrc.jp/alignment/software/)
+
+Command: 
+
+
+
+Trim aligned reads using trimAl
+
