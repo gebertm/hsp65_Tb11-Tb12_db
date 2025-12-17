@@ -3,16 +3,19 @@
 
 > Read Length: 401bps
 
+> A collaboration between Dr. Matthew J. Gebert (CU Boulder), Michael Hoffert (CU Boulder)
+and Dr. Conor Meehan (Nottingham Trent University)
+
 
 ## Database update protocol
 
 Step 1: Cleaning and preparing the training dataset (Dai et al, 2011)
 
-Reference: https://journals.asm.org/doi/full/10.1128/jcm.02602-10
+Reference database: https://journals.asm.org/doi/full/10.1128/jcm.02602-10
 
 Align Dai et al reference sequences using MAFFT (https://mafft.cbrc.jp/alignment/software/)
 
-Command: 
+Command: mafft --auto -in <hsp65_dai_database_file.fa> -out <hsp65_dai_database_file.afa>
 
 
 
