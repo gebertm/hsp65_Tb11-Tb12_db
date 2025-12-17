@@ -9,19 +9,19 @@ and Dr. Conor Meehan (Nottingham Trent University)
 
 ## Database update protocol
 
-I: Cleaning and preparing the training dataset (Dai et al, 2011)
+Part I: Cleaning and preparing the training dataset (Dai et al, 2011)
 
-Reference database: https://journals.asm.org/doi/full/10.1128/jcm.02602-10
+> Reference database: https://journals.asm.org/doi/full/10.1128/jcm.02602-10
 
-Step 1: Align Dai et al reference sequences using MAFFT (https://mafft.cbrc.jp/alignment/software/)
+### Step 1: Align Dai et al reference sequences using MAFFT (https://mafft.cbrc.jp/alignment/software/)
 
 Command: 
-'''
+```
 	mafft --auto -in <hsp65_dai_database_file.fa> > <hsp65_dai_database_file.afa>
-'''
+```
 
 
-Step 2: Trim aligned reads using trimAl (https://trimal.readthedocs.io/en/latest/)
-'''
+### Step 2: Trim aligned reads using trimAl (https://trimal.readthedocs.io/en/latest/)
+```
 	trimal -in <hsp65_dai_database_file.afa> -out <hsp65_dai_database_file_trimmed.afa> -automated1 -keepheader
-'''
+```
